@@ -1,244 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Pierce Goulimis 😎</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet" />
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="assets/css/devicons.min.css" rel="stylesheet" />
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="assets/css/resume.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pierce Goulimis</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #111;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+  p, li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  ul li::before {
+    content: '•';
+    color: #aaa;
+    margin-right: 0.5rem;
+  }
+  a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dotted #0070f3;
+    cursor: pointer;
+  }
+  a:hover {
+    border-bottom: 1px solid #0070f3;
+  }
+  .card {
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  .hidden {
+    display: none;
+  }
+  .back-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    color: #0070f3;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+</style>
 </head>
+<body>
+  <h1>Pierce Goulimis</h1>
 
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a style="width:100%" class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span style="font-weight:700;font-family:'Saira Extra Condensed';font-size:25px;text-align: center;" class="d-block d-lg-none hidden-header">Pierce Goulimis</span>
-      <span class="d-none d-lg-block">
-        <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://media-exp1.licdn.com/dms/image/C4E03AQEHfovmcTPZ8Q/profile-displayphoto-shrink_800_800/0/1632182908136?e=1659571200&v=beta&t=oIuiu-bC9w9KlTZZJCBkMNTdfDYRtkfeNUCVJpqQs3A" alt="" /> -->
-      </span>
-    </a>
-
-    <button style="display:none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav" style="display:none;">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <!--
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-					</li>
-					-->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">
-          Pierce
-          <span class="text-primary">Goulimis</span>
-        </h1>
-        <h3>Honours Bachelor of Science (HBSc), Computer Science and Economics</h3>
-        <div class="subheading mb-5">
-          Waterloo, Ontario ·
-          <a href="mailto:pierce@piercegoulimis.com">pierce@piercegoulimis.com</a>
-        </div>
-
-        <p class="mb-5">
-          I'm a student at Wilfrid Laurier University excited about technology that facilitates bringing people together. Outside of tech, I’m passionate about fitness, soccer, world politics, and cryptocurrency.
-          <!-- <br>
-						I am actively looking for full time positions in the Phoenix AZ, or Las Vegas area. -->
-        </p>
-        <!-- <a href="" target="_blank">View Resume as PDF</a> -->
-        <br />
-        <!-- <a href="" target="_blank">View Projects as PDF</a> -->
-        <br />
-        <br />
-        <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/piercegoulimis/" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a href="https://github.com/p3rce" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div class="my-auto">
-        <h2 class="mb-5">Experience</h2>
-
-	<div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Cybersecurity Intern</h3>
-            <div class="subheading mb-3"><a href="https://www.linkedin.com/company/elastify/" target="__blank">Elastify</a></div>
-            <ul>
-             
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Present</span>
-          </div>
-        </div>
-	      
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Residence Life Don</h3>
-            <div class="subheading mb-3"><a href="https://www.linkedin.com/school/wilfrid-laurier-university/" target="__blank">Wilfrid Laurier University</a> - Department of Residence</div>
-<!--             <ul>
-              <li>Provided direct personal support to a community of first-year students to help aid in their transition to Laurier</li>
-              <li>Acted as a catalyst for first-year students to connect to the Laurier community and encourage personal growth and development through leadership and communication</li>
-              <li>Responded to building emergencies, ensured building safety and security, working with external community partners</li>
-            </ul> -->
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2023 - Present</span>
-          </div>
-        </div>
-
-
-
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Information Technology Intern</h3>
-            <div class="subheading mb-3"><a href="https://www.linkedin.com/company/navalogic/" target="__blank">Navalogic</a></div>
-<!--             <ul>
-              <li>
-                Lead numerous successful website migration and redesign projects for clients
-              </li>
-              <li>
-                Facilitated the integration of Microsoft OneDrive, Office365, and Microsoft Azure for clients, enhancing document management, collaboration, and scalability
-              </li>
-              <li> Played a pivotal role in the successful deployment and configuration of networked devices, including computers, printers, and other peripherals, ensuring seamless connectivity and functionality for various organizations
-              </li>
-              <li>
-                Authored comprehensive documentation for IT processes and engaged in training sessions with Senior Mentors to improve and add to knowledge
-              </li>
-            </ul> -->
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">April 2023 - Sept 2023</span>
-          </div>
-        </div>
-    </section>
-
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-      <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Honours Bachelor of Science, Computer Science with a Minor in Economics</h3>
-            <div class="subheading mb-3">Wilfrid Laurier University | Waterloo, Canada</div>
-            <ul>
-              <li>
-                <strong>Science Courses:</strong> Data Structures I and II, Java OOP, Algorithm Analysis and Design, Database I, Operating Systems, Computer Networks, Design Thinking, Digital Electronics
-              </li>
-              <li><strong>Business Courses:</strong> Business Fundamentals, Financial Accounting, Microeconomics, Communication Skills for Leadership, Organizational Leadership</li>
-              <li>
-                <strong>Activities:</strong> VP of Technology @ Laurier Financial Technology Association, Lead Web Developer @ Laurier Student Union Presidential Campaign
-              </li>
-              <li>
-                <strong>Volunteering:</strong> Coach for Co-Ed Basketball in Waterloo, Volunteered at Mooredale Day Camp, Volunteered for Leaside Flames Boys Hockey
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2021 - April 2025</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">High School Diploma</h3>
-            <div class="subheading mb-3">Leaside High School | Toronto, Canada</div>
-            <ul>
-              <li>
-                <strong>Activities:</strong> Varsity Soccer, Student Council, Investment Club, JA Business Club
-              </li>
-            </ul>
-
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - June 2021</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
+  <div id="main-content">
+    <p>Hi there! My name is Pierce Goulimis, I'm from Toronto, Canada and a student studying Computer Science & Economics at Wilfrid Laurier University. In my spare time, I enjoy reading about macroeconomics, public policy, cryptocurrency and business. I've completed several internships during my studies in the information technology and cybersecurity space. Most recently, I worked as a Cloud & Infrastructure Security Analyst for a large consulting firm.</p>
     
+    <p>I've started on a new journey creating content on social media and building consumer mobile apps. My goal is to become self sufficient through my apps and to have the location freedom I've always desired. My two dream cars are the Ferrari 488 and the Lamborghini Huracán.</p>
+   <!-- <p>To learn more about my story, <a onclick="showStory()">read here</a>.</p> -->
+
+    <div class="card"><div><a href="https://www.instagram.com/piercegoulimis">Instagram</a></div><span>&rarr;</span></div>
+    <div class="card"><div><a href="https://www.x.com/piercegoulimis">Twitter</a></div><span>&rarr;</span></div>
+        <div class="card"><div><a href="https://www.tiktok.com/@piercegoulimis">TikTok</a></div><span>&rarr;</span></div>
+  
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/fed7abe0cd.js" crossorigin="anonymous"></script>
+  <div id="story-content" class="hidden">
+    <p>From 2022 to 2023, I built projects that failed, graduated with no savings, and faced many rejections. I moved home, took loans, and set a goal to make $50k in one year to pursue entrepreneurship.</p>
+    <p>I spent 12+ hours a day teaching myself to code and build.</p>
+    <ul>
+      <li>Launched X project (3M+ downloads, $4M+ revenue)</li>
+      <li>Launched Y project (15M+ downloads, $6M+ revenue)</li>
+    </ul>
+    <p>I now help others learn, build, and create.</p>
+    <div class="back-button" onclick="showMain()">&#8592; Back</div>
+  </div>
 
-
-  <!-- Plugin JavaScript -->
-  <script src="assets/js/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="assets/js/resume.min.js"></script>
+<script>
+  function showStory() {
+    document.getElementById('main-content').classList.add('hidden');
+    document.getElementById('story-content').classList.remove('hidden');
+  }
+  function showMain() {
+    document.getElementById('story-content').classList.add('hidden');
+    document.getElementById('main-content').classList.remove('hidden');
+  }
+</script>
 </body>
-
 </html>
